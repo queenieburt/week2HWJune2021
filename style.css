@@ -1,0 +1,47 @@
+/* This code is for animated carousel  */
+#window1 {
+    border: 1px solid;
+    width:  200px;
+    height: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+#imageSlider {
+    display: flex;
+    transform: translateX(-200px);
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+
+/* This code is for JS animated carousel  */
+#window2 {
+    border: 1px solid;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+#imageSlider1 {
+    display: flex;
+    transform: translateX(0px);
+    animation: slide 20s infinite;
+  }
+
+  /* This code is for both of the carousel */
+h1 {
+    text-align: center;
+  }
+
+  img {
+    width:  200px;
+    height: 200px;
+  }
+
+  /* This code if for the JS carousel */
+  @keyframes slide {
+    100% { transition: ease-in; transform: translateX(-200%); }
+}
